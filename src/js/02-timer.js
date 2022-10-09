@@ -41,7 +41,8 @@ function timer() {
 
   refs.timerId = setInterval(() => {
     const ms = this.time - new Date().getTime();
-    const { days, hours, minutes, seconds } = addLeadingZero(convertMs(ms));
+    const convertTime = convertMs(ms);
+    const { days, hours, minutes, seconds } = addLeadingZero(convertTime);
 
     if (ms < refs.TIMER_DELAY) {
       clearInterval(refs.timerId);
