@@ -10,7 +10,7 @@ const refs = {
   minutes: document.querySelector('[data-minutes]'),
   seconds: document.querySelector('[data-seconds]'),
   TIMER_DELAY: 1000,
-  timerId: 0,
+  timerId: null,
 };
 
 const options = {
