@@ -78,7 +78,7 @@ function convertMs(ms) {
 function addLeadingZero(value) {
   let result = {};
 
-  for (key in value) {
+  for (let key in value) {
     result[key] = value[key].toString().padStart(2, '0');
   }
   return result;
