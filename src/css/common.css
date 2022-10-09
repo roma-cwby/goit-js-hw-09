@@ -10,9 +10,33 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+
+  transition: background-color 150ms linear;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+body .buttons{
+  width: 100px;
+  margin: 0 auto;
+}
+
+.timer{
+  display: flex;
+}
+
+.field:not(:last-child){
+  margin-right: 20px;
+}
+
+span {
+  display: block;
+  text-align: center;
+}
+
+.value{
+  font-size: 50px;
 }
